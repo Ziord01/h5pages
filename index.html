@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片切换示例</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <img src="1-1.png" alt="图片1-1" class="image image1" id="image1-1">
+    <img src="1-2.png" alt="图片1-2" class="image hidden image1" id="image1-2">
+    <img src="1-3.png" alt="图片1-3" class="image hidden image1" id="image1-3">
+    <img src="1-4.png" alt="图片1-4" class="image hidden image1" id="image1-4">
+    <img src="2.png" alt="图片2" class="image hidden image2" id="image2">
+    <img src="3-1.png" alt="图片3-1" class="image hidden image3" id="image3-1">
+    <img src="3-2.png" alt="图片3-2" class="image hidden image3" id="image3-2">
+    <img src="4-1.png" alt="图片4-1" class="image hidden image4" id="image4-1">
+    <img src="4-2.png" alt="图片4-2" class="image hidden image4" id="image4-2">
+    <img src="5-1.png" alt="图片5-1" class="image hidden image5" id="image5-1">
+    <img src="5-2.png" alt="图片5-2" class="image hidden image5" id="image5-2">
+    <img src="6-1.png" alt="图片6-1" class="image hidden image6" id="image6-1">
+    <img src="6-2.png" alt="图片6-2" class="image hidden image6" id="image6-2">
+    <!-- 按钮1 -->
+    <div class="button_2 hidden" style="top: 32%; right: 14%;" onclick="changeImage('image3')" id="button2_1"></div>
+    <!-- 按钮2 -->
+    <div class="button_2 hidden" style="top: 32%; right: 27%;" onclick="changeImage('image4')" id="button2_2"></div>
+    <!-- 按钮3 -->
+    <div class="button_2 hidden" style="top: 32%; right: 40%;" onclick="changeImage('image5')" id="button2_3"></div>
+    <!-- 按钮4 -->
+    <div class="button_2 hidden" style="top: 32%; right: 52%;" onclick="changeImage('image6')" id="button2_4"></div>
+    <div id="watch-button" class="hidden" onclick="watchVideo()">点击观看</div>
+    <div class="audio-control hidden" onclick="toggleAudio()">&#9835;</div>
+    <audio id="bgm" loop>
+        <source src="m1.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

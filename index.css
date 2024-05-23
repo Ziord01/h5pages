@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dfe6e9; /* 背景颜色 */
+}
+
+.container {
+    position: relative;
+    width: 640px;
+    height: 1030px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.audio-control.hidden {
+    display: none;
+}
+
+#watch-button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #997053; /* 按钮背景颜色 */
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    z-index: 5; /* 确保按钮在最上层 */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#watch-button:hover {
+    background-color: #7d5d3b; /* 鼠标悬停时的背景颜色 */
+}
+
+@keyframes moveUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes moveDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#image1-2.show {
+    animation: moveUp 2s forwards;
+}
+
+#image1-3.show {
+    animation: moveDown 1.5s forwards;
+}
+
+#image1-4.show {
+    animation: fadeIn 2s forwards;
+}
+
+.button_2 {
+    width: 50px; /* 按钮宽度 */
+    height: 50px; /* 按钮高度 */
+    background-color: gray;
+    border-radius: 50%; /* 使按钮呈现圆形 */
+    position: absolute; /* 绝对定位 */
+    cursor: pointer;
+}
+
+/* 悬停时的样式 */
+.button_2:hover {
+    background-color: #cf556c;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+}
+.close-button {
+    width: 40px; /* 按钮宽度 */
+    height: 40px; /* 按钮高度 */
+    line-height: 35px; /* 使文字垂直居中 */
+    padding-left: 10px;/* 添加左内边距 */
+    background-color: gray; /* 关闭按钮颜色 */
+    border-radius: 50%; /* 使按钮呈现圆形 */
+    position: absolute; /* 绝对定位 */
+    cursor: pointer;
+    top: 33%;
+    right: 14%; /* 调整关闭按钮位置 */
+}
+
+.button_22:hover {
+    background-color: #cf556c;
+}
+.additional-button2 {
+    position: absolute;
+    top: 22%; /* 调整按钮距离顶部的距离 */
+    left: 59%; /* 调整按钮距离左侧的距离 */
+    background-color: #8e9174; /* 按钮背景颜色 */
+    padding: 5px 10px; /* 按钮内边距 */
+    border-radius: 5px; /* 按钮圆角 */
+    cursor: pointer;
+    font-size: 0.8em; /* 按钮字体大小 */
+}
+.additional-button2:hover {
+    background-color: #aaa; /* 鼠标悬停时的背景颜色 */
+}
+.additional-button1 {
+    position: absolute;
+    top: 24%; /* 调整按钮距离顶部的距离 */
+    left: 38%; /* 调整按钮距离左侧的距离 */
+    background-color: #8e9174; /* 按钮背景颜色 */
+    padding: 5px 10px; /* 按钮内边距 */
+    border-radius: 5px; /* 按钮圆角 */
+    cursor: pointer;
+    font-size: 0.8em; /* 按钮字体大小 */
+}
+.additional-button1:hover {
+    background-color: #aaa; /* 鼠标悬停时的背景颜色 */
+}
+
